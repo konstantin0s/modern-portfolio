@@ -1,15 +1,18 @@
 //XL Widescreens
 @include mediaXL {
-
+.projects {
+  grid-template-columns: repeat(4, 1fr);
+}
 }
 
 //Desktop And Laptop
 @include mediaLg {
-  
+  grid-template-columns: repeat(3, 1fr);
 }
 
 //Tablets and small Laptops
 @include mediaMd {
+  grid-template-columns: repeat(2, 1fr);
   main {
     align-content: center;
     text-align: center;
@@ -65,4 +68,5 @@
       margin-bottom: 1rem;
     }
   }
+  grid-template-columns: 1fr;
 }
