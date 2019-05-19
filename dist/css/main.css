@@ -156,7 +156,8 @@ main {
   grid-template-areas: 'bioimage bio bio';
   grid-template-columns: repeat(3, 1fr); }
 
-.bio-image {
+.bio-img {
+  width: 50%;
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
@@ -178,6 +179,26 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+/* Contact Page*/
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 /* Button styles*/
 .btn, .btn-dark, .btn-light {
