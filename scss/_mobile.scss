@@ -1,9 +1,36 @@
 //XL Widescreens
 @include mediaXL {
-.projects {
-  grid-template-columns: repeat(4, 1fr);
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+
+//MEdia max width 788px
+
+@include mediaMd {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  main#home h1 {
+    margin-top: 10vh;
+    margin-top: 10vh;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    width: 80%;
+
+  }
 }
+
 
 //Desktop And Laptop
 @include mediaLg {
@@ -13,6 +40,7 @@
 //Tablets and small Laptops
 @include mediaMd {
   grid-template-columns: repeat(2, 1fr);
+
   main {
     align-content: center;
     text-align: center;
@@ -23,7 +51,8 @@
     }
   }
 
-  ul.menu-nav, div.menu-branding {
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
@@ -32,6 +61,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -50,23 +80,86 @@
   }
 
   .about-info {
-    grid-template-areas: 
-    'bioimage'
-    'bio';
+    grid-template-areas:
+      'bioimage'
+      'bio';
     grid-template-columns: 1fr;
+  }
+
+  .boxes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 80%;
+    font-size: 1.5rem;
+
+  }
+
+}
+
+@include mediaXs {
+
+
+  main#home h1 {
+    margin-top: 10vh;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 80%;
   }
 
 }
 
 //Smartphones
 @include mediaSm {
-  main#home h1 {
-   margin-top: 10vh;
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
+  main#home h1 {
+    margin-top: 10vh;
+    margin-top: 10vh;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    text-align: center;
+    width: 80%;
+
+  }
+
+  /*Work projects */
+  .projects {
+    display: grid;
+    grid-gap: 0.8rem;
+    grid-template-columns: 1fr;
+
+    .item {
+      height: 60vh;
+    }
+
+    img {
+      width: 100%;
+      border: 3px #fff solid;
+      height: 30vh;
+
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
     }
   }
-  grid-template-columns: 1fr;
+
+  .boxes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    font-size: 1.2rem;
+
+  }
 }
