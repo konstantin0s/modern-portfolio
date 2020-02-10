@@ -113,6 +113,27 @@
 
 //Smartphones
 @include mediaSm {
+
+  .menu-branding {
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/jecrop.jpg);
+      border-radius: 50%;
+      border: solid 3px #eece1a;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+  }
+
+  .menu-nav {
+    .nav-link {
+      text-align: center;
+    }
+  }
+
+
   #home {
     display: flex;
     flex-direction: column;
@@ -130,6 +151,13 @@
     width: 80%;
 
   }
+
+  /* about page*/
+
+     .about-info {
+      display: flex;
+      flex-direction: column;
+    }
 
   /*Work projects */
   .projects {
