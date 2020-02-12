@@ -12,6 +12,29 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about-info {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .menu-branding.show {
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/jecrop.jpg);
+      border-radius: 50%;
+      border: solid 3px #eece1a;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: 300px;
+    }
+  }
+  
+
   #home {
     display: flex;
     flex-direction: column;
@@ -35,6 +58,14 @@
 //Desktop And Laptop
 @include mediaLg {
   grid-template-columns: repeat(3, 1fr);
+
+     /* about page*/
+
+     .about-info {
+      display: flex;
+      flex-direction: column;
+    }
+
 }
 
 //Tablets and small Laptops
@@ -48,6 +79,20 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+    }
+  }
+
+  .menu-branding.show {
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/jecrop.jpg);
+      border-radius: 50%;
+      border: solid 3px #eece1a;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: auto;
     }
   }
 
@@ -108,6 +153,27 @@
     text-align: center;
     width: 80%;
   }
+
+    /* about page*/
+
+    .about-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+  .menu-branding {
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/jecrop.jpg);
+      border-radius: 50%;
+      border: solid 3px #eece1a;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+  }
+
 
 }
 
