@@ -452,4 +452,6 @@ main {
   .boxes div:first-of-type {
     top: 287px;
     position: absolute;
-    width: 100%; } }
+    width: 100%;
+    padding: 0 2.4em;
+    word-break: break-word; } }
