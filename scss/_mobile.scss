@@ -8,6 +8,19 @@
 //MEdia max width 788px
 
 @include mediaMd {
+
+
+  main {
+    align-content: center;
+    text-align: center;
+
+    .lg-heading {
+      font-size: 4em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -77,6 +90,7 @@
     text-align: center;
 
     .lg-heading {
+      font-size: 4em;
       line-height: 1;
       margin-bottom: 1rem;
     }
@@ -180,6 +194,22 @@
 //Smartphones
 @include mediaSm {
 
+
+  main {
+    align-content: center;
+    text-align: center;
+
+    .lg-heading {
+      font-size: 4em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .bio {
+    margin-top: 2em;
+  }
+
   .menu-branding {
     .portrait {
       width: 250px;
@@ -250,10 +280,19 @@
 
   .boxes div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 50%;
-    font-size: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 8em;
+    margin-top: 1rem;
+    position: relative;
+  }
 
+  .boxes {
+    div:first-of-type {
+      top: 287px;
+    position: absolute;
+    width: 100%;
+    }
   }
 }

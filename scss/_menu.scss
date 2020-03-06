@@ -98,6 +98,10 @@
       transform: translate3d(600px, 0, 0);
       @include easeOut;
 
+      a:last-of-type {
+         font-size: 1em;
+      }
+
       &.show {
         //Slide in from botttom
         transform: translate3d(0, 0, 0)
