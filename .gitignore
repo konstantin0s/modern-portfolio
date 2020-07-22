@@ -3,3 +3,7 @@ node_modules
 .history
 
 package-lock.json
+
+.sass-cache
+
+.vscode
